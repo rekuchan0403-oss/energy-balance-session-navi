@@ -29,7 +29,7 @@ ul{margin:6px 0 0;padding-left:20px}.note{font-size:13px;color:var(--muted)}
 </head>
 <body>
 <header><div class="wrap"><div class="brand">🌈 ENERGY BALANCE™ SESSION NAVI</div>
-<nav><button class="navbtn" onclick="show('home')">🏠 HOME</button><button class="navbtn" onclick="show('e-feel')">🌸 感じる</button><button class="navbtn" onclick="show('e-lead')">🔥 導く</button><button class="navbtn" onclick="show('e-do')">🚀 現実化</button><button class="navbtn" onclick="show('e-get')">👑 受け取る</button><button class="navbtn" onclick="show('chakra')">🌈 7チャクラ</button><button class="navbtn" onclick="show('links')">🔗 関係</button><button class="navbtn" onclick="show('bodywork')">🧘 BODY WORK</button></nav></div></header>
+<nav><button class="navbtn" onclick="show('home')">🏠 HOME</button><button class="navbtn" onclick="show('e-feel')">🌸 感じる</button><button class="navbtn" onclick="show('e-lead')">🔥 導く</button><button class="navbtn" onclick="show('e-do')">🚀 現実化</button><button class="navbtn" onclick="show('e-get')">👑 受け取る</button><button class="navbtn" onclick="show('chakra')">🌈 7チャクラ</button><button class="navbtn" onclick="show('links')">🔗 関係</button><button class="navbtn" onclick="show('bodywork')">🧘 BODY WORK</button><button class="navbtn" onclick="show('bridge')">🌉 強みで補う</button></nav></div></header>
 <main>
 <section id="home" class="page active">
 <div class="hero"><h1>セッション中は、気になるENERGYをポチッ 👆</h1><p>「低い＝その力がない」ではなく、<b>その力がどこで止まりやすいか</b>を見る。</p></div>
@@ -64,7 +64,8 @@ ul{margin:6px 0 0;padding-left:20px}.note{font-size:13px;color:var(--muted)}
 </div></div>
 <div class="card"><h2>🌈 ③ 7チャクラ QUICK WORK</h2><div class="branch"><span>❤️ 第1｜足裏で床を10秒押す → 今日の一歩を決める</span><b>🚀 現実化</b></div><div class="branch"><span>🧡 第2｜下腹に手 → 3呼吸 → 今何を感じる？</span><b>🌸 感じる</b></div><div class="branch"><span>💛 第3｜みぞおちに手 → 私はどうしたい？</span><b>🔥 導く</b></div><div class="branch"><span>💚 第4｜胸に両手 → すでに受け取ったものを3つ思い出す</span><b>👑 受け取る</b></div><div class="branch"><span>🩵 第5｜「本当は○○」を声に出して3回</span><b>🌸＋🔥</b></div><div class="branch"><span>💙 第6｜「これは事実？ それとも私の解釈？」</span><b>🌸＋🔥</b></div><div class="branch"><span>💜 第7｜息を長く吐く → 今日手放せるものを1つ選ぶ</span><b>👑 受け取る</b></div></div>
 <div class="card"><h2>🎶 ④ CHAKRA SOUND SCAN（発声）</h2><p>各チャクラに意識を向け、無理のない高さ・声量で、息を吐きながら自分の声を響かせる。声がつらければ聴くだけ・呼吸だけでもOK。</p><div class="cols"><div class="mini">❤️ 第1：ド（C）<br>🧡 第2：レ（D）<br>💛 第3：ミ（E）<br>💚 第4：ファ（F）</div><div class="mini">🩵 第5：ソ（G）<br>💙 第6：ラ（A）<br>💜 第7：シ（B）</div></div><p>各音で「どこに響く？ 心地よい？ 何か変化した？」と観察。終わったら無音で3呼吸して「最初と今、何が違う？」</p><p class="note">音階とチャクラの対応は象徴的な一方式で、特定の音によるチャクラ活性化が科学的に確立されているわけではありません。</p></div>
-<div class="card"><h2>🔄 ⑤ WARAI.LOOP™ につなげる</h2><p>🌸 今、何を感じてる？ → 🔥 じゃあ私はどうしたい？ → 🚀 今できる一番小さい行動は？ → 👑 そして私は、何を受け取ることを許す？</p><p><b>診断 → チャクラMAP → BODY SCAN → BODY SWITCH → 本音 → 行動 → 受け取る</b></p></div><button class="back" onclick="show('home')">← HOMEへ</button></section></main>
+<div class="card"><h2>🔄 ⑤ WARAI.LOOP™ につなげる</h2><p>🌸 今、何を感じてる？ → 🔥 じゃあ私はどうしたい？ → 🚀 今できる一番小さい行動は？ → 👑 そして私は、何を受け取ることを許す？</p><p><b>診断 → チャクラMAP → BODY SCAN → BODY SWITCH → 本音 → 行動 → 受け取る</b></p></div><button class="back" onclick="show('home')">← HOMEへ</button></section><section id="bridge" class="page"><div class="hero"><h1>🌉 強みで補う｜12パターン</h1><p>弱い力を責めず、すでに使えている力を橋にして、小さな一歩へ。</p></div>
+<div class="card"><h3>① 使いにくい力</h3><div class="grid4" id="weakButtons"></div><h3>② 強く持っている力</h3><div class="grid4" id="strongButtons"></div></div><div class="card" id="bridgeResult" aria-live="polite"></div><p class="note">強い力も使いすぎている場合があります。本人にとって無理のない方法を選び、診断だけで決めつけず対話で確かめてください。</p><button class="back" onclick="show('home')">← HOMEへ</button></section></main>
 <script>
 const questions=["現実で何をする？","私は何を感じてる？","私はどうしたい？","私は何を受け取っていい？","本当は何て言いたい？","私は何を信じてる？","流れを信頼できる？"];
 const cs=[
@@ -80,6 +81,23 @@ function renderChakras(){document.getElementById('chakraCards').innerHTML=cs.map
 function show(id){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
 function showChakra(n){show('chakra');setTimeout(()=>document.getElementById('c'+n).scrollIntoView({behavior:'smooth',block:'start'}),100);}
 renderChakras();
+const bridgePowers=[["feel","🌸 感じる力"],["lead","🔥 導く力"],["do","🚀 現実化する力"],["get","👑 受け取る力"]];
+const bridgeTips={
+feel:{lead:"「今日は自分の気持ちを確認する」と決め、好き・嫌いを一つ選んでみる。",do:"散歩・日記・音楽など、身体の感覚に気づける行動を習慣にする。",get:"安心できる相手に話を聞いてもらい、気持ちをそのまま受け止めてもらう。"},
+lead:{feel:"好き・嫌い・心地よさを手がかりに、まず小さな選択をする。",do:"小さな行動を試し、実際の経験から自分の方向性を決める。",get:"人の意見を参考にしながら、最後は自分の意思で選ぶ。"},
+do:{feel:"ワクワクや心地よさを行動の入口にして、楽しいことから5分始める。",lead:"自分で「いつ・何をするか」を一つ決め、実行する。",get:"助け・協力・便利な仕組みを受け取り、行動の負担を小さくする。"},
+get:{feel:"嬉しい・ありがたいという感情を十分に味わい、受け取ったことに気づく。",lead:"「私はこれを受け取る」と自分に許可し、褒め言葉を否定せず受け取る。",do:"実際に助けを頼む、休む時間を予定に入れるなど、受け取る行動をする。"}};
+let bridgeWeak="do",bridgeStrong="feel";
+function renderBridge(){
+document.getElementById("weakButtons").innerHTML=bridgePowers.map(([id,name])=>'<button class="energy-btn" style="'+(id===bridgeWeak?'border:2px solid #82638e;background:#f4edf7;':'')+'" onclick="chooseBridgeWeak(\''+id+'\')">'+name+'</button>').join("");
+document.getElementById("strongButtons").innerHTML=bridgePowers.filter(([id])=>id!==bridgeWeak).map(([id,name])=>'<button class="energy-btn" style="'+(id===bridgeStrong?'border:2px solid #82638e;background:#f4edf7;':'')+'" onclick="chooseBridgeStrong(\''+id+'\')">'+name+'</button>').join("");
+const w=bridgePowers.find(x=>x[0]===bridgeWeak)[1],st=bridgePowers.find(x=>x[0]===bridgeStrong)[1];
+document.getElementById("bridgeResult").innerHTML='<h2>✨ 強みを使った補い方</h2><p><b>'+st+' → '+w+'</b></p><div class="quote">'+bridgeTips[bridgeWeak][bridgeStrong]+'</div><p><b>セッションの問い：</b>「この方法なら、今日どんな小さな一歩ができそう？」</p>';
+}
+function chooseBridgeWeak(id){bridgeWeak=id;if(bridgeStrong===id)bridgeStrong=bridgePowers.find(x=>x[0]!==id)[0];renderBridge();}
+function chooseBridgeStrong(id){bridgeStrong=id;renderBridge();}
+renderBridge();
+
 </script>
 <footer style="max-width:1050px;margin:auto;padding:0 20px 40px;color:#777;font-size:12px">※チャクラとの関連は医学的・科学的な診断や治療を目的としたものではなく、身体感覚と自己対話のための象徴的なMAPです。強い・続く身体症状はチャクラの問題と決めつけず、必要に応じて医療機関で確認してください。</footer>
 </body></html>
